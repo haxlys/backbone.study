@@ -1,3 +1,4 @@
+var App = App || {};
 // Backbone Model
 
 // Model 생성

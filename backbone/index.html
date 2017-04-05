@@ -1,16 +1,20 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 ﻿<html>
 ﻿  <head>
 ﻿    <meta charset="utf-8">
-﻿    <title></title>
+﻿    <title>11</title>
 ﻿  </head>
 ﻿  <body>
-
-    <footer></footer>
-
+    <div id="todo"></div>
+    <script type="text/template" id="item-template">
+      <div>
+        <input type="checkbox" id="todo_complete" <%=completed ? 'checked="checked"' : '' %>>
+        <%= title %>
+      </div>
+    </script>
     <script src="js/core/underscore/underscore.js"></script>
     <script src="js/core/jquery/dist/jquery.js"></script>
     <script src="js/core/backbone/backbone.js"></script>
-    <script src="js/view.js"></script>
+    <script src="js/collection.js"></script>
 ﻿  </body>
 ﻿</html>
