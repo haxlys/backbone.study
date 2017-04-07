@@ -81,7 +81,7 @@ var view = new View({el: button1});
 view.setElement(button2);
 
 button1.trigger('click');
-button2.trigger('click');
+button2.trigger('click'); // setElement로 element를 교체했기 때문에 button1 trigger는 반응하지 않는다.
 
 /* render() 이해 */
 // 가장 단순한 render()
@@ -128,7 +128,5 @@ var TodoView = Backbone.View.extend({
   toggleComplited: function(){
     // class명이 toogle 요소가 클릭 되었을 경우 발생할 이벤트
   }
-    :
-    :
 });
 /* 이벤트 해시 */
